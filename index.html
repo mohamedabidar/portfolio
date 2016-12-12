@@ -1,3 +1,262 @@
+<!--
+    Project Name : Flat Portfolio Website
+    Created By : Mohamed Abidar
+    Started Date : 01/12/2016
+-->
+<!DOCTYPE html>
 <html>
-  <body>Test</body>
+  <head>
+    <title>Mohamed Abidar | Web &amp; Application Developer / Designer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta name="author" content="Mohamed Abidar">
+    <meta name="description" content="Mohamed Abidar web and application developer / designer freelancer">
+    <meta name="keywords" content="mohamed,abidar,html,css,jquery,php,c,c#,java,designer,developer,developpeur,website,création,siteweb,application,freelancer,maroc">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <!--[if IE]>
+      <div class="IE">
+        <h3>Please Don't use Internet Explorer to see this page. Use another browser instead !!</h3>
+      </div>
+    <![endif]-->
+
+    <!-- Header Section -->
+    <header>
+      <div class="Container">
+        <!-- Navbar Section -->
+        <nav class="animated">
+          <div class="standard-menu">
+            <ul>
+              <li class="active"><a href="#whatido">What I Do</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li id="logo"><a href="http://mohamedabidar.comxa.com">MA</a></li>
+              <li><a href="#portfolio">My Works</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+            </ul>
+          </div><!-- /.standard-menu -->
+          <div class="responsive-menu">
+            <div class="Dropdown-header">
+              <button class="Dropdown">
+                <span class="IconBar"></span>
+                <span class="IconBar"></span>
+                <span class="IconBar"></span>
+              </button>
+              <span id="logo"><a href="http://mohamedabidar.comxa.com">MA</a></span>
+            </div>
+            <div class="Dropdown-content">
+              <a href="#whatido">What I Do</a>
+              <a href="#about">About Me</a>
+              <a href="#portfolio">My Works</a>
+              <a href="#contact">Contact Me</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Jumbotron Section -->
+        <section class="Jumbotron">
+          <!-- Text Column -->
+          <div class="text">
+            <h1>Mohamed Abidar</h1>
+            <p>Web &amp; Application Developer</p>
+          </div><!-- /.text -->
+          <div class="slider">
+            <img src="images/imac.png" alt="">
+          </div><!-- /.slider -->
+        </section><!-- /.Jumbotron -->
+      </div><!-- /.Container -->
+    </header>
+    <!-- What I Do Section -->
+    <section class="whatIdo" id="whatido">
+      <div class="Container">
+        <!-- heading -->
+        <div class="heading">
+          <h1>What I Do</h1>
+          <p>I'm passionate about web and application developement, I build websites and desktop applications, and I work a little bit as a graphic designer.</p>
+        </div><!-- /.heading -->
+        <!-- content -->
+        <div class="content">
+          <!-- First Column -->
+          <div class="col-4">
+
+            <div class="icon"><img src="images/whatido/1.png" alt=""></div>
+            <h2>Static Website</h2>
+            <p>Flat and stylish websites, like : using last technologies as HTML5, CSS3, Jquery..</p>
+          </div><!-- /.col-4 -->
+          <!-- Second Column -->
+          <div class="col-4">
+            <div class="icon"><img src="images/whatido/2.png" alt=""></div>
+            <h2>Web Application</h2>
+            <p>Dynamic wbesites and platform idependent applications, that you can access via a browser from any device such as tablets and phones.</p>
+          </div><!-- /.col-4 -->
+          <!-- Third Column -->
+          <div class="col-4">
+            <div class="icon"><img src="images/whatido/3.png" alt=""></div>
+            <h2>Desktop Application</h2>
+            <p>Desktop softwares to manage your tasks, as : Inventory Managmenet, Sales Managmenet...</p>
+          </div><!-- /.col-4 -->
+          <!-- Fourth Column -->
+          <div class="col-4">
+            <div class="icon"><img src="images/whatido/4.png" alt=""></div>
+            <h2>Graphic Design</h2>
+            <p>Creative Logos, Business Cards, Flyers, Brochures... To improve your business image.</p>
+          </div><!-- /.col-4 -->
+        </div><!-- /.content -->
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="Container">
+        <div class="heading">
+          <h1 class="animate" data-animation="fadeIn">Featured Projects</h1>
+          <p>This is my featured and favorite project that I ever worked on :</p>
+        </div>
+        <div class="content">
+          <img src="images/featured.png" alt="">
+        </div>
+      </div><!-- /.Container -->
+    </section>
+
+    <!-- About Me Section -->
+    <section class="aboutMe" id="about">
+      <div class="heading">
+        <h1>About Me</h1>
+      </div>
+      <div class="content">
+        <img src="images/about-pict.png" alt="">
+        <p>My name's Mohamed Abidar, 21 years old,  web &amp; application designer and developer.</p>
+        <a class="Button" href="http://www.mohamedabidar.comxa.com/resume" target="_blank">Read More</a>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="Container">
+        <div class="heading">
+          <h1>My Skills</h1>
+        </div>
+        <div class="content">
+          <!-- Column #1 -->
+          <div class="col-4 chart">
+            <div id="chart1"></div>
+            <h2>Web Design</h2>
+          </div><!-- /.col-4 -->
+          <!-- Column #2 -->
+          <div class="col-4 chart">
+            <div id="chart2"></div>
+            <h2>Web Development</h2>
+          </div><!-- /.col-4 -->
+          <!-- Column #3 -->
+          <div class="col-4 chart">
+            <div id="chart3"></div>
+            <h2>Application Development</h2>
+          </div><!-- /.col-4 -->
+          <!-- Column #4 -->
+          <div class="col-4 chart">
+            <div id="chart4"></div>
+            <h2>Graphic Design</h2>
+          </div><!-- /.col-4 -->
+        </div><!-- /.content -->
+      </div><!-- /.Container -->
+    </section>
+
+    <section id="portfolio">
+      <div class="Container">
+        <div class="heading">
+          <h1>My Portfolio</h1>
+          <p>There are a list of some of my last projects (websites, applications, and designs).</p>
+        </div>
+        <div class="buttons">
+          <ul>
+            <li class="filter active" data-filter="all"><a>All</a></li>
+            <li class="filter" data-filter=".web"><a>Websites</a></li>
+            <li class="filter" data-filter=".apps"><a>Applications</a></li>
+            <li class="filter" data-filter=".design"><a>Design</a></li>
+          </ul>
+        </div><!-- /.buttons -->
+        <div class="content">
+          <div id="MixContainer">
+            <div class="col-2 mix web">
+              <img src="images/portfolio/1.png" alt="">
+            </div><!-- /.col-2 -->
+            <div class="col-2 mix web">
+              <img src="images/portfolio/2.png" alt="">
+            </div><!-- /.col-2 -->
+            <div class="col-2 mix apps">
+              <img src="images/portfolio/3.png" alt="">
+            </div><!-- /.col-2 -->
+            <div class="col-2 mix apps">
+              <img src="images/portfolio/4.jpg" alt="">
+            </div><!-- /.col-2 -->
+            <div class="col-2 mix apps">
+              <img src="images/portfolio/5.jpg" alt="">
+            </div><!-- /.col-2 -->
+            <div class="col-2 mix design">
+              <img src="images/portfolio/6.jpg" alt="">
+            </div><!-- /.col-2 -->
+          </div><!-- / #MixContainer -->
+        </div><!-- /.content -->
+      </div><!-- /.Container -->
+    </section>
+
+    <!-- Contact Me Secton -->
+    <section id="contact">
+      <div class="Container">
+        <div class="heading">
+          <h1>Contact Me</h1>
+          <p>I am available for freelance.<br/>Send me your peoject details, and I will reply you soon !</p>
+        </div>
+        <div class="content">
+          <form action="" method="post">
+            <div class="field">
+              <input type="text" name="name" placeholder="Name">
+            </div>
+            <div class="field">
+              <input type="email" name="email" placeholder="Email Address">
+            </div>
+            <div class="field message-field">
+              <textarea name="message" rows="8" cols="80" placeholder="Message"></textarea>
+            </div>
+            <div class="submit">
+              <button type="submit" name="submit"><i class="fa fa-paper-plane"></i>Send Message</button>
+            </div>
+          </form>
+        </div><!-- /.content -->
+      </div><!-- /.Container -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="Container">
+        <hr>
+        <div class="social-links">
+          <p>
+            <a href="https://www.facebook.com/mohamed.abidr" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="mailto:contact.abidar@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/112308202921613654305" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a href="http://mabidar.tk/" target="_blank"><i class="fa fa-globe"></i></a>
+          </p>
+        </div><!-- /.social-links -->
+        <div class="copyright">
+          <p>All rights reserved &copy; 2016 Designed and coded by: <span>Mohamed Abidar</span></p>
+        </div><!-- /.copyright -->
+      </div><!-- /.Container -->
+    </footer>
+
+    <!-- JavaScript -->
+
+    <!--[if IE]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="js/circleDonutChart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>

@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+/*========================== General Styles ==========================*/
+body {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  direction: ltr;
+  /*width: 100%;*/
+}
+* {
+  box-sizing: border-box;
+}
+.Container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Slab', serif;
+  color: #2c3e50;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 25px;
+}
+p {
+  color: #2c3e50;
+  font-size: 1.2em;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+.heading {
+  padding: 20px 0;
+}
+.heading h1 {
+  margin: 10px 0;
+  text-align: center;
+}
+.heading p {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.content {
+  padding: 30px 0;
+}
+.Button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3em;
+  border: 1px solid #fff;
+  padding: 7px 15px;
+  margin: 20px 0;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+.Button:hover {
+  color: #3498db;
+  border-color: #3498db;
+}
+/* Columns */
+.col-2 {
+  width: 50%;
+  float: left;
+  padding: 0 10px;
+}
+.col-4 {
+  width: 25%;
+  float: left;
+  padding: 0 10px;
+}
+
+/*========================== Header ==========================*/
+header {
+  background: #3498db;
+  overflow: hidden;
+  height: 650px;
+}
+/*========================== Navbar ==========================*/
+nav {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+nav ul {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+}
+nav li {
+  display: inline-block;
+  list-style: none;
+  width: 120px;
+  margin: 0 5px;
+}
+nav li a {
+  padding: 10px;
+  text-decoration: none;
+  color: #ecf0f1;
+  text-transform: uppercase;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+nav li:not(#logo) a:hover {
+  color: #fff;
+  border-bottom: 3px solid #fff;
+}
+#logo {
+  font-size: 3em;
+  vertical-align: middle;
+}
+#logo a {
+  font-family: 'Roboto Slab', serif;
+}
+#logo a:hover {
+  color: #2c3e50;
+}
+/*----------------- Responsive Menu ------------------*/
+.responsive-menu {
+  background: #fff;
+}
+.Dropdown-content {
+  display: none;
+}
+.Dropdown-content a {
+  display: block;
+  color: #333;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.Dropdown-content a:hover {
+  background: #3498db;
+  color: #fff;
+}
+.Dropdown-header {
+  height: 70px;
+}
+button.Dropdown {
+  width: 60px;
+  float: right;
+  background: none;
+  border: 1px solid #888;
+  margin: 10px;
+  padding: 0 10px;
+  height: 50px;
+  cursor: pointer;
+}
+.IconBar {
+  display: block;
+  border-top: 1px solid black;
+  height: 10px
+}
+.IconBar:first-child {
+  margin-top: 10px;
+}
+.responsive-menu #logo a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding: 10px 30px;
+}
+
+
+/*========================== Fixed Navbar ==========================*/
+nav.fixed {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 0px 30px #555;
+  z-index: 100;
+}
+nav.fixed li a {
+  color: #768ca2;
+}
+nav.fixed li.active a {
+  border-bottom: 2px solid #768ca2;
+}
+nav.fixed li:not(#logo) a:hover {
+  color: #2c3e50;
+  border-bottom: 2px solid #768ca2;
+}
+nav.fixed #logo a {
+  color: #2c3e50
+}
+nav.fixed #logo a:hover {
+  color: #3498db;
+}
+
+/*========================== Jumbotron ==========================*/
+.Jumbotron {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  padding-top: 180px;
+}
+/* Title */
+.Jumbotron .text {
+  width: 50%;
+  float: left;
+  padding: 0 20px;
+  margin: 8% auto auto auto;
+  text-align: center;
+}
+.Jumbotron h1 {
+  font-size: 3.5em;
+  margin: 0;
+  color: #fff;
+}
+.Jumbotron p {
+  margin: -10px 0 0;
+  font-size: 1.7em;
+  text-transform: lowercase;
+  color: #fff;
+}
+/* Slider */
+.Jumbotron .slider {
+  width: 50%;
+  float: left;
+  padding: 0 20px;
+}
+.Jumbotron .slider img {
+  width: 90%;
+}
+
+/*========================== What I Do ==========================*/
+.whatIdo .content {
+  margin-top: 50px;
+  padding: 30px 0;
+  overflow: hidden;
+}
+.whatIdo .content .col-4 {
+  text-align: center;
+  padding: 0 10px;
+}
+.whatIdo .content .col-4 h2 {
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+.whatIdo .content .col-4 .icon {
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+.whatIdo .content .col-4:hover .icon {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+.whatIdo .content .col-4:hover h2 {
+  color: #3498db;
+}
+
+/*========================== Projects ==========================*/
+.projects {
+  background: #ecf0f1;
+}
+.projects .content {
+  margin-top: 20px;
+  padding: 50px 0;
+  text-align: center;
+}
+.projects img {
+  box-shadow: 0 0 10px #888;
+}
+
+/*========================== About Me ==========================*/
+.aboutMe {
+  background: #34495e;
+}
+.aboutMe h1 {
+  color: #fff;
+}
+.aboutMe .content {
+  text-align: center;
+  padding: 30px 0;
+}
+.aboutMe .content img {
+  border-radius: 50%;
+  margin: 20px 0;
+  width: 250px;
+}
+.aboutMe .content p {
+  font-size: 1.3em;
+  color: #fff;
+  width: 50%;
+  margin: 30px auto;
+}
+
+/*========================== Skills ==========================*/
+.skills .col-4 {
+  text-align: center;
+  padding: 20px 0;
+}
+.skills h2 {
+  font-weight: normal;
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+/*========================== Portfolio ==========================*/
+#portfolio {
+  background: #f2f2f2;
+}
+/* Buttons */
+#portfolio .buttons {
+  text-align: center;
+  overflow: hidden;
+  padding: 30px 0;
+}
+#portfolio .buttons ul {
+  padding: 0;
+}
+#portfolio .buttons li {
+  display: inline-block;
+  /*float: left;*/
+  margin: 0 15px;
+  box-shadow: 1px 1px 1px #f2f2f2
+}
+#portfolio .buttons a {
+  padding: 10px 20px;
+  font-size: 1.1em;
+  background: #3498db;
+  color: #fff;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+  cursor: pointer;
+}
+#portfolio .buttons li.active a,
+#portfolio .buttons a:hover {
+  background: #2c3e50;
+}
+/* Content */
+#portfolio .content {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#portfolio .col-2 {
+  padding: 10px;
+  text-align: center;
+}
+#portfolio img {
+  box-shadow: 0 0 10px #888;
+}
+#MixContainer .mix {
+  display: none;
+  overflow: hidden;
+}
+
+/*========================== Contact ==========================*/
+#contact {
+  text-align: center;
+  background: #1D2026;
+}
+#contact .heading h1,
+#contact .heading p {
+  color: #fff
+}
+/* Contact Form */
+#contact form {
+  width: 50%;
+  margin: 0 auto;
+}
+#contact .field {
+  width: 100%;
+  margin: 30px auto;
+  height: 50px;
+  overflow: hidden;
+}
+#contact input,
+#contact textarea,
+#contact button {
+  border: none;
+  color: #fff;
+  font: 1.2em 'Titillium Web', serif;
+  background: #7e8184;
+}
+#contact .field input:focus,
+#contact .field textarea:focus {
+  border: none;
+  outline: 0 none;
+}
+/* Placeholders */
+::-webkit-input-placeholder { color: #bdc3c7 }
+:-moz-placeholder { /* Firefox 18- */ color: #bdc3c7 }
+::-moz-placeholder { /* Firefox 19+ */ color: #bdc3c7 }
+:-ms-input-placeholder { color: #bdc3c7  }/* Name and Email Fields */
+
+#contact .field input {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+}
+/* Message */
+#contact .message-field {
+  height: 100%;
+}
+#contact .message-field textarea{
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+/* Submit Button */
+#contact .submit button {
+  color: #fff;
+  background: #2c3e50;
+  height: 50px;
+  width: 180px;
+  cursor: pointer;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+  border: none;
+}
+#contact .submit button:hover {
+  background: #3498db;
+}
+#contact .submit i {
+  margin-right: 10px
+}
+
+
+/*========================== Footer ==========================*/
+footer {
+  background: #1D2026;
+  color: #fff;
+  overflow: hidden;
+}
+footer hr {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255,255,255,.25);
+  margin: 0;
+}
+/* Social Links */
+footer .social-links {
+  width: 50%;
+  float: left;
+}
+footer .social-links a {
+  font-size: 1em;
+  color: #7f8c8d;
+  margin: 0 3px;
+  background: #2c3e50;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+footer .social-links a:hover {
+  background: #3498db;
+  color: #fff;
+}
+/* Copyright */
+footer .copyright {
+  width: 50%;
+  float: left;
+}
+footer .copyright p {
+  color: #ecf0f1;
+  font-size: 1em;
+  line-height: 40px;
+  text-align: right;
+}
+footer .copyright span {
+  color: #3498db;
+}
+/*------------------------ For Internet Explorer Browsers -----------------------*/
+.IE {
+  background: #888;
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  line-height: 65px;
+  text-align: center;
+  z-index: 4000;
+}
